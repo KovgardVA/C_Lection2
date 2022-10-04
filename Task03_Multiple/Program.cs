@@ -1,8 +1,12 @@
-﻿Console.WriteLine("Давайте проверим кратность чисел!");
-Console.WriteLine("Введите первое число: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+﻿int Prompt(string massage)
+{
+    Console.WriteLine(massage);
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
+
+int firstNumber = Prompt("Введите первое число: ");
+int secondNumber = Prompt("Введите первое число: ");
 
 if (firstNumber % secondNumber == 0)
 {
