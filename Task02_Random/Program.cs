@@ -1,13 +1,10 @@
 ﻿int randomNumber = new Random().Next(10,100);
 Console.WriteLine("Ваше число: " + randomNumber);
 
-int firstNumber = randomNumber / 10;
-int secondNumber = randomNumber % 10;
-
-if (firstNumber > secondNumber) {
-    Console.WriteLine ("Наибальшее число: " + firstNumber);
+if (randomNumber / 10 > randomNumber % 10) {
+    Console.WriteLine ("Наибальшее число: " + randomNumber / 10);
 }
 else 
 {
-    Console.WriteLine ("Наибальшее число: " + secondNumber);
+    Console.WriteLine ("Наибольшая цифра: " + randomNumber % 10);
 }
