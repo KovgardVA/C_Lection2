@@ -39,3 +39,9 @@ bool CheckTriangle(int aSide, int bSide, int cSide)
 int a = Prompt("Введите сторону А: ");
 int b = Prompt("Введите сторону B: ");
 int c = Prompt("Введите сторону C: ");
+
+if (CheckTriangle(a, b, c))
+{
+    Console.WriteLine("Треугольник с такими сторонами имеет место быть!");
+}
+else Console.WriteLine("Такого треугольника быть не может!");
